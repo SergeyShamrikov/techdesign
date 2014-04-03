@@ -8,8 +8,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <script type="text/javascript" src="js/jquery.js"></script>
-	 <script src="js/script.js"></script>
-	 
+    <script type="text/javascript" src="js/jquery-migrate-1.1.1.js"></script>
 	<!--[if lt IE 8]>
    <div style=' clear: both; text-align:center; position: relative;'>
      <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -23,98 +22,504 @@
     <![endif]-->
 </head>
 <body>
-<div class="container_12">
-<!--==============================header=================================-->
-   	<header>
-      <div class="main p_rel">
-        <div class="authorization f_left wrapper">
+  <header>
+    <div class="main p_rel">
+      <div class="authorization popup_open f_left wrapper">
+        <input type="submit" value="">
+        <div class="authorization_btn f_left">Авторизация</div>
+      </div>
+      <h1 class="logo p_abs"><a href="index.html">HomeStyle</a></h1>
+      <div class="f_right">  
+        <div role="search">
+          <input type="text" value="Поиск" onblur="if(this.value=='') this.value='Поиск'" onfocus="if(this.value =='Поиск' ) this.value=''">
           <input type="submit" value="">
-          <input type="text" value="Авторизация" onblur="if(this.value=='') this.value='Авторизация'" onfocus="if(this.value =='Авторизация' ) this.value=''">
+          <div class="clear"></div>
         </div>
-        <h1 class="logo p_abs"><a href="index.html">HomeStyle</a></h1>
-        <div class="f_right">  
-          <div role="search">
-            <input type="text" value="Поиск" onblur="if(this.value=='') this.value='Поиск'" onfocus="if(this.value =='Поиск' ) this.value=''">
-            <input type="submit" value="">
-            <div class="clear"></div>
-          </div>
-            <ul class="social">
-              <li class="social_it vk">
-                <a href="#" class="social_lk">12.4</a>
-              </li>
-              <li class="social_it fb">
-                <a href="#" class="social_lk">7.1</a>
-              </li>
-              <li class="social_it tw">
-                <a href="#" class="social_lk">1.5</a>
-              </li>
-              <li class="social_it gl">
-                <a href="#" class="social_lk">0.7</a>
-              </li>
-            </ul>
-        </div>
-        <div class="clear"></div>
+          <ul class="social">
+            <li class="social_it vk">
+              <a href="#" class="social_lk">12.4</a>
+            </li>
+            <li class="social_it fb">
+              <a href="#" class="social_lk">7.1</a>
+            </li>
+            <li class="social_it tw">
+              <a href="#" class="social_lk">1.5</a>
+            </li>
+            <li class="social_it gl">
+              <a href="#" class="social_lk">0.7</a>
+            </li>
+          </ul>
       </div>
-	    <nav>
-        	<div class="main">
-            <ul class="sf-menu">
-              <li class="current menu_it1"><a href="index-1.html">Софт</a></li>
-              <li class="menu_it2"><a href="index-2.html"><i></i>Железо</a></li>
-              <li class="menu_it3"><a href="index-3.html"><i></i>Наука</a></li>
-              <li class="menu_it4"><a href="index-4.html"><i></i>Космос</a></li>
-              <li class="menu_it5"><a href="index-5.html"><i></i>Гаджеты</a></li>
-              <li class="menu_it6"><a href="index-5.html"><i></i>Безопасность</a></li>
-              <li class="menu_it7"><a href="index-5.html"><i></i>Мобильные</a></li>
+      <div class="clear"></div>
+    </div>
+    <nav class="floating">
+        <div class="main">
+          <ul class="sf-menu helvetica reg">
+            <li class="current menu_it1"><a href="index-1.html">Софт</a></li>
+            <li class="menu_it2"><a href="index-2.html"><i></i>Железо</a></li>
+            <li class="menu_it3"><a href="index-3.html"><i></i>Наука</a></li>
+            <li class="menu_it4"><a href="index-4.html"><i></i>Космос</a></li>
+            <li class="menu_it5"><a href="index-5.html"><i></i>Гаджеты</a></li>
+            <li class="menu_it6"><a href="index-5.html"><i></i>Безопасность</a></li>
+            <li class="menu_it7"><a href="index-5.html"><i></i>Мобильные</a></li>
+         </ul>
+        </div>
+       <div class="clear"></div>
+       <div class="header_bottom">
+         <div class="main">
+           <ul class="heder_list wrapper">
+              <li class="heder_list_it">
+                <a href="#" class="heder_list_lk">ТРЕНДЫ</a>
+              </li>
+              <li class="heder_list_it">
+                <a href="#" class="heder_list_lk">iOS 8</a>
+              </li>
+              <li class="heder_list_it">
+                <a href="#" class="heder_list_lk">Samsung Galaxy 5</a>
+              </li>
+              <li class="heder_list_it">
+                <a href="#" class="heder_list_lk">Google Glass </a>
+              </li>
+              <li class="heder_list_it">
+                <a href="#" class="heder_list_lk">XBOX One</a>
+              </li>
+              <li class="heder_list_it">
+                <a href="#" class="heder_list_lk">Гравитационные волы</a>
+              </li>
+              <li class="heder_list_it">
+                <a href="#" class="heder_list_lk">Intel Quad Core</a>
+              </li>
+              <li class="heder_list_it">
+                <a href="#" class="heder_list_lk">Winamp New</a>
+              </li>
+              <li class="heder_list_it">
+                <a href="#" class="heder_list_lk">Mcafee Antivirus 2015</a>
+              </li>
+              <li class="heder_list_it">
+                <a href="#" class="heder_list_lk">Исправление безопасности</a>
+              </li>
            </ul>
-          </div>
-         <div class="clear"></div>
-         <div class="header_bottom">
-           <div class="main">
-             <ul class="heder_list wrapper">
-                <li class="heder_list_it">
-                  <a href="#" class="heder_list_lk">ТРЕНДЫ</a>
-                </li>
-                <li class="heder_list_it">
-                  <a href="#" class="heder_list_lk">iOS 8</a>
-                </li>
-                <li class="heder_list_it">
-                  <a href="#" class="heder_list_lk">Samsung Galaxy 5</a>
-                </li>
-                <li class="heder_list_it">
-                  <a href="#" class="heder_list_lk">Google Glass </a>
-                </li>
-                <li class="heder_list_it">
-                  <a href="#" class="heder_list_lk">XBOX One</a>
-                </li>
-                <li class="heder_list_it">
-                  <a href="#" class="heder_list_lk">Гравитационные волы</a>
-                </li>
-                <li class="heder_list_it">
-                  <a href="#" class="heder_list_lk">Intel Quad Core</a>
-                </li>
-                <li class="heder_list_it">
-                  <a href="#" class="heder_list_lk">Winamp New</a>
-                </li>
-                <li class="heder_list_it">
-                  <a href="#" class="heder_list_lk">Mcafee Antivirus 2015</a>
-                </li>
-                <li class="heder_list_it">
-                  <a href="#" class="heder_list_lk">Исправление безопасности</a>
-                </li>
-             </ul>
-           </div>
          </div>
-        </nav>
-    </header>
+       </div>
+      </nav>
+  </header>
 <!--==============================content================================-->
-    <section id="content">
-    	<div class="container_">
-        
+  <section id="content">
+  	<div class="main">
+      <!-- news filter -->
+      <div class="wrapper filter_row">
+        <h2 class="f_left helvetica title1">Сегодня, 20 марта</h2>
+        <ul class="f_right wrapper filter" id="filter">
+          <li class="f_left filter_item"><span class="d_n-block filter_label">Архив:</span></li>
+          <li class="f_left filter_item"><a data-filter=".yestarday" href="javascript:;" class="filter_link">вчера</a></li>
+          <li class="f_left filter_item"><a data-filter=".dby" href="javascript:;" class="filter_link">позавчера</a></li>
+          <li class="f_left filter_item"><a data-filter=".week" href="javascript:;" class="filter_link">неделя</a></li>
+          <li class="f_left filter_item"><a data-filter=".time" href="javascript:;" class="filter_link"><span class="d_in-block time_icon">20.03.15</span></a></li>
+        </ul>
       </div>
-    </section>
+
+      <!-- news -->
+      <div class="news_box" id="news">
+        <figure class="news_item p_rel yestarday time">
+          <img src="images/post_img1.jpg" alt="">
+          <div class="p_abs news_item_inner">
+            <figcaption class="helvetica news_caption">
+              <a href="#">Интерактивное телевиденье вытесняет традиционное</a>
+            </figcaption>
+            <ul class="wrapper post_data">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="news_item1 yestarday time">
+          <div class="post_img p_rel">
+            <img src="images/post_img3.jpg" alt="">
+            <figcaption class="p_abs helvetica news_caption1">
+              Интерактивное телевиденье вытесняет традиционное 
+            </figcaption>
+            <div class="p_rel post_excerpt">
+              На своей страничке в <a href="#" class="link1">twitter</a> LG поделилась с общественностью новым изображением. Можно увидеть, что часы получат прямоугольный дисплей и будут достаточно миниатюрны.
+              <ul class="wrapper p_abs post_data1">
+                <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+                <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+                <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </figure>
+        <figure class="news_item1 dby time">
+          <div class="post_img p_rel">
+            <img src="images/post_img4.jpg" alt="">
+            <figcaption class="p_abs helvetica news_caption1">
+              Обзор Toshiba  Kirabook
+            </figcaption>
+            <div class="p_rel post_excerpt">
+              В начале этого года южнокорейская компания Samsung запустила в мировую продажу семейство планшетных компьютеров Pro с диагональю экрана от 8,4 до 12,2 дюйма. Но несмотря на обширный рынок сбыта, устройства...
+              <ul class="wrapper p_abs post_data1">
+                <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+                <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+                <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </figure>
+        <figure class="news_item p_rel dby time">
+          <img src="images/post_img2.jpg" alt="">
+          <div class="p_abs news_item_inner">
+            <figcaption class="helvetica news_caption">
+              <a href="#">У большеразмерных планшетов Samsung плохие прогнозы</a>
+            </figcaption>
+            <ul class="wrapper post_data">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="news_item1 week time">
+          <div class="post_img p_rel">
+            <img src="images/post_img3.jpg" alt="">
+            <figcaption class="p_abs helvetica news_caption1">
+              Интерактивное телевиденье вытесняет традиционное 
+            </figcaption>
+            <div class="p_rel post_excerpt">
+              На своей страничке в <a href="#" class="link1">twitter</a> LG поделилась с общественностью новым изображением. Можно увидеть, что часы получат прямоугольный дисплей и будут достаточно миниатюрны.
+              <ul class="wrapper p_abs post_data1">
+                <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+                <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+                <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </figure>
+        <figure class="news_item1 week time">
+          <div class="post_img p_rel">
+            <img src="images/post_img4.jpg" alt="">
+            <figcaption class="p_abs helvetica news_caption1">
+              Обзор Toshiba  Kirabook
+            </figcaption>
+            <div class="p_rel post_excerpt">
+              В начале этого года южнокорейская компания Samsung запустила в мировую продажу семейство планшетных компьютеров Pro с диагональю экрана от 8,4 до 12,2 дюйма. Но несмотря на обширный рынок сбыта, устройства...
+              <ul class="wrapper p_abs post_data1">
+                <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+                <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+                <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </figure>
+      </div>
+
+      <div class="clearfix helvetica news_lists">
+        <ul class="f_left news_list">
+          <li class="news_list__item">
+            <h3 class="news_title1 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title2 title2"><a class="news_link" href="#">Сравнительный обзор HTC One</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title3 title2"><a class="news_link" href="#">Сравнительный обзор HTC One</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title4 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title3 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title1 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="f_left news_list">
+          <li class="news_list__item">
+            <h3 class="news_title1 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title2 title2"><a class="news_link" href="#">Сравнительный обзор HTC One</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title3 title2"><a class="news_link" href="#">Сравнительный обзор HTC One</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title4 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title3 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title1 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="f_left news_list">
+          <li class="news_list__item">
+            <h3 class="news_title1 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title2 title2"><a class="news_link" href="#">Сравнительный обзор HTC One</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title3 title2"><a class="news_link" href="#">Сравнительный обзор HTC One</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title4 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title3 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title1 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="f_left news_list">
+          <li class="news_list__item">
+            <h3 class="news_title1 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title2 title2"><a class="news_link" href="#">Сравнительный обзор HTC One</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title3 title2"><a class="news_link" href="#">Сравнительный обзор HTC One</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title4 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title3 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+          <li class="news_list__item">
+            <h3 class="news_title1 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <ul class="wrapper p_abs post_data1">
+              <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
+              <li class="f_left data_item"><a href="#" class="data_type3"><span>235</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="helvetica more_btn">ПОКАЗАТЬ ЕЩЕ</a>
+      <!-- News end -->
+    </div>
+  </section>
 <!--==============================footer=================================-->
-    <footer>
-    </footer>
-</div>
+  <footer role="contentinfo">
+    <div class="main wrapper">
+      <div class="column1 f_left">
+        <h2 class="logo_footer">
+          <a href="#">Tech dzen</a>
+          <span class="helvetica">ТЕХНОЛОГИЧЕСКОЕ ПРОСВЕЩЕНИЕ</span>
+        </h2>
+        <ul class="list1">
+          <li class="list1_it">
+            <a href="" class="list1_lk1">info@techdzen.com</a>
+          </li>
+          <li class="list1_it">
+            <a href="" class="list1_lk2">Реклама на портале</a>
+          </li>
+        </ul>
+        <div class="copyrite">© 2013—2014 Techdzen.com</div>
+      </div>
+      <div class="column2 f_left">
+        <h5 class="title3">Социальные сети</h5>
+        <ul class="social_footer wrapper">
+          <li class="social_footer_it"></li>
+          <li class="social_footer_it"></li>
+          <li class="social_footer_it"></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="hiden_box">
+    <div id="authorization" class="d_modal">
+        <div id="tabs">
+          <ul class="tabs_list">
+            <li class="tabs_it"><a href="#tabs-1" class="tabs_list_lk">Авторизация</a></li>
+            <li class="tabs_it"><a href="#tabs-2" class="tabs_list_lk">Регистрация</a></li>
+          </ul>
+          <div id="tabs-1">
+            <form action="">
+              <input type="text" value="Логин" onblur="if(this.value=='') this.value='Логин'" onfocus="if(this.value =='Логин' ) this.value=''">
+              <input type="pasword" value="Пароль" onblur="if(this.value=='') this.value='Пароль'" onfocus="if(this.value =='Пароль' ) this.value=''">
+              <button type="submit" class="button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+              <a href="#" class="recover">Востановить паооль</a>
+            </form>
+          </div>
+          <div id="tabs-2">
+            <form action="">
+              <input type="text" value="Логин" onblur="if(this.value=='') this.value='Логин'" onfocus="if(this.value =='Логин' ) this.value=''">
+              <input type="pasword" value="Пароль" onblur="if(this.value=='') this.value='Пароль'" onfocus="if(this.value =='Пароль' ) this.value=''">
+              <input type="email" value="Email" onblur="if(this.value=='') this.value='Email'" onfocus="if(this.value =='Email' ) this.value=''">
+              <label for=""><input type="checkbox"> получать уведомление на сервер</label>
+              <button type="submit" class="button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/jquery.arcticmodal.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var $container = $('#news');
+      // init
+      $container.isotope({
+        // options
+        itemSelector: '[class^="news_item"]',
+        layoutMode: 'fitRows'
+      });
+
+      var filterFns = {
+        // show if number is greater than 50
+        numberGreaterThan50: function() {
+          var number = $(this).find('.number').text();
+          return parseInt( number, 10 ) > 50;
+        },
+        // show if name ends with -ium
+        ium: function() {
+          var name = $(this).find('.name').text();
+          return name.match( /ium$/ );
+        }
+      };
+      $('#filter').on( 'click', '.filter_link', function() {
+        var filterValue = $(this).attr('data-filter');
+        // use filter function if value matches
+        filterValue = filterFns[ filterValue ] || filterValue;
+        $container.isotope({ filter: filterValue });
+      });
+      $('.popup_open').live('click',function(){
+            $('#authorization').arcticmodal({
+
+          });
+      $( "#tabs" ).tabs();
+    });
+    })
+    $(function(){
+        $(window).scroll(function() {
+            var top = $(document).scrollTop();
+            if (top < 136) $(".floating").css({top: '0', position: 'relative'});
+            else $(".floating").css({top: '0px', position: 'fixed',width: '100%',});
+        });
+    });
+  </script>
+
 </body>
 </html>

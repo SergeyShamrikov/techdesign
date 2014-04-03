@@ -100,6 +100,7 @@
 	border-bottom-width: 0;
 	padding: 0;
 	white-space: nowrap;
+	background-color: #262626;
 }
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
 	float: left;
@@ -147,7 +148,8 @@
 	border-left: 1px solid #555555;
 	border-right: none;
 }
-.ui-tabs .ui-tabs-active,.ui-tabs li:hover{background-color: #fff;}
+.ui-tabs .ui-tabs-nav .ui-tabs-active{background-color: #fff;}
+.ui-tabs li:hover{color: #fff;}
 .tabs_list li.ui-tabs-active .tabs_list_lk,.tabs_list li .tabs_list_lk:hover{
 	border-color: #fff;
 	color: #0a0a0a;
@@ -157,4 +159,8 @@
 	-o-transition: none;
 	transition: none;
 }
-
+.ui-tabs li .tabs_list_lk:hover{
+	color: #fff;
+	border-color: #555555;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-active .tabs_list_lk{color: #0a0a0a;border-color: #fff;}

@@ -29,7 +29,7 @@
 			tpl: '<div class="arcticmodal-overlay"></div>',
 			css: {
 				backgroundColor: '#000',
-				opacity: .6
+				opacity: .85
 			}
 		},
 

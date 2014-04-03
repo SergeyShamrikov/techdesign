@@ -23,7 +23,7 @@
 </head>
 <body>
   <header>
-    <div class="main p_rel">
+    <div class="main p_rel header_top">
       <div class="authorization popup_open f_left wrapper">
         <input type="submit" value="">
         <div class="authorization_btn f_left">Авторизация</div>
@@ -57,7 +57,7 @@
           <ul class="sf-menu helvetica reg">
             <li class="current menu_it1"><a href="index-1.html">Софт</a></li>
             <li class="menu_it2"><a href="index-2.html"><i></i>Железо</a></li>
-            <li class="menu_it3"><a href="index-3.html"><i></i>Наука</a></li>
+            <li class="menu_it3"><a href="science.html"><i></i>Наука</a></li>
             <li class="menu_it4"><a href="index-4.html"><i></i>Космос</a></li>
             <li class="menu_it5"><a href="index-5.html"><i></i>Гаджеты</a></li>
             <li class="menu_it6"><a href="index-5.html"><i></i>Безопасность</a></li>
@@ -247,7 +247,7 @@
             </ul>
           </li>
           <li class="news_list__item">
-            <h3 class="news_title3 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <h3 class="news_title5 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
             <ul class="wrapper p_abs post_data1">
               <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
               <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
@@ -255,7 +255,7 @@
             </ul>
           </li>
           <li class="news_list__item">
-            <h3 class="news_title1 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <h3 class="news_title6 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
             <ul class="wrapper p_abs post_data1">
               <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
               <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
@@ -265,7 +265,7 @@
         </ul>
         <ul class="f_left news_list">
           <li class="news_list__item">
-            <h3 class="news_title1 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
+            <h3 class="news_title7 title2"><a class="news_link" href="#">Пуленепробиваемый деловой костюм за 3,2 млн долларов</a></h3>
             <ul class="wrapper p_abs post_data1">
               <li class="f_left data_item"><a href="#" class="data_type1"><span>13.00</span></a></li>
               <li class="f_left data_item"><a href="#" class="data_type2"><span>11</span></a></li>
@@ -478,7 +478,7 @@
   <script src="js/jquery.arcticmodal.js"></script>
   <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script>
-    $(document).ready(function(){
+    $(window).load(function(){
       var $container = $('#news');
       // init
       $container.isotope({
@@ -512,13 +512,17 @@
       $( "#tabs" ).tabs();
     });
     })
-    $(function(){
-        $(window).scroll(function() {
+       $(window).scroll(function() {
             var top = $(document).scrollTop();
-            if (top < 136) $(".floating").css({top: '0', position: 'relative'});
-            else $(".floating").css({top: '0px', position: 'fixed',width: '100%',});
+            if (top < 136) {
+              $(".floating").css({top: '0', position: 'relative'});
+              $("header").removeClass("floating1");  
+            }
+            else{
+              $(".floating").css({top: '-3px', position: 'fixed',width: '100%',});
+              $("header").addClass("floating1");
+            }
         });
-    });
   </script>
 
 </body>

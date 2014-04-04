@@ -700,7 +700,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 }
 
 /*comments*/
-#your_comment{position: relative;margin-bottom: 39px;}
+#your_comment{
+  position: relative;
+  margin-bottom: 39px;
+  padding-top: 15px;
+}
 #your_comment input[type="text"]{
   background: none;
   float: none;
@@ -709,7 +713,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 #your_comment button[type="submit"]{
   position: absolute;
   right: 0;
-  top: 0;
+  top: 15px;
   width: 174px;
   color: #fff;
   font-size: 18px;
@@ -1051,6 +1055,8 @@ footer {
   overflow:hidden;
 }
 .social a{
+  font-family: 'helveticaneuecyrlight', sans-serif;
+  font-weight: 300;
   display:block;
   float:left;
   width:32px;

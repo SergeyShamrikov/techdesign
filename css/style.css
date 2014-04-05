@@ -617,14 +617,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
   span.breadcrumbs_lk{
     text-decoration: none;
   }
+
 .comeback{
   display: inline-block;
   font-size: 12px;
   line-height: 24px;
   color: #8d8d8d;
   border: 1px solid #e1e1e1;
-  padding: 3px 21px 3px 36px;
-  background:  url(../images/comeback_icon.png) 9px 6px no-repeat;
+  padding: 3px 21px 3px 9px;
+  background: #fcfcfc; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fcfcfc 0%, #f5f5f5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #fcfcfc 0%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #fcfcfc 0%,#f5f5f5 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #fcfcfc 0%,#f5f5f5 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #fcfcfc 0%,#f5f5f5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+}
+.comeback i{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 2px 9px 0 0;
+  background:  url(../images/comeback_icon.png) 0 0 no-repeat;
 }
 .science{padding-top: 25px;}
 .science_it img{
